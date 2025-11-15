@@ -1,0 +1,11 @@
+node_modules/
+flowchart-frontend/node_modules/
+flowchart-frontend/dist/
+*.pyc
+__pycache__/
+.env
+*.log
+static/*.png
+.DS_Store
+temp_*.mmd
+temp_*.json

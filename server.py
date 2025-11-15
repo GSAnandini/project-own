@@ -322,15 +322,6 @@ def health_check():
 
 
 if __name__ == '__main__':
-    print("=" * 70)
-    print("  🚀 AI Flowchart Generator Backend Server - HIGH RESOLUTION MODE")
-    print("=" * 70)
-    print("\n✓ Server starting on http://localhost:5000")
-    print("✓ Generating 3000x2400 high-resolution flowcharts")
-    print("✓ Make sure Ollama is running: ollama run llama3")
-    print("✓ React frontend should connect to this server")
-    print("✓ Endpoint: POST /generate")
-    print("✓ Health check: GET /health\n")
-
-    # DISABLE auto-reloader to prevent continuous restarts
-    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=False)
+    import os
+    port = int(os.environ.get('PORT', 7860))  # Hugging Face uses 7860
+    app.run(debug=False, host='0.0.0.0', port=port, use_reloader=False)
