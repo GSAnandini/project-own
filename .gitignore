@@ -8,4 +8,4 @@ __pycache__/
 static/*.png
 .DS_Store
 temp_*.mmd
-temp_*.json
+temp_*.json"static/*.png" 
